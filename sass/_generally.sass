@@ -1,0 +1,230 @@
+@mixin title 
+	+natasha
+	font-size: 37px
+	color: #000
+	letter-spacing: 5px
+	text-transform: uppercase
+	margin-bottom: 61px
+	@media (max-width: 575px)
+		text-align: center
+
+
+@mixin skills 
+	+natasha
+	font-size: 22px
+	color: #22241b
+	letter-spacing: 5px
+	text-transform: uppercase
+	@media (max-width: 575px)
+		text-align: center
+
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus 
+	color: #fff
+	text-decoration: none
+	outline: none
+
+h1, h2, h3, h4, p
+	margin: 0
+	padding: 0
+
+ul, li
+	margin: 0
+	padding: 0
+
+.header
+	background: url(../img/background.jpg) no-repeat center top / cover
+	height: 100vh
+	color: #fff
+	.nav
+		padding-top: 58px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&__list
+			ul
+				display: flex
+				flex-wrap: wrap
+				list-style: none
+				li
+					margin: 0 25px
+					a
+						text-transform: uppercase
+						+bold
+						font-size: 15px
+						text-align: center
+						letter-spacing: 2px
+						word-spacing: 5px
+						&:hover
+							text-shadow: 0 0 60px rgba(255,255,255,0.8)
+
+		&__email
+			+normal300
+	&__main
+		h1
+			+natasha
+			font-size: 49px
+			letter-spacing: 10px
+			text-align: center
+			text-transform: uppercase
+			margin-top: 296px
+			span
+				+normal100
+				font-size: 29px
+	&__btn
+		width: 40px
+		margin: 0 auto
+		margin-top: 265px
+		border-radius: 50%
+		&:hover
+			box-shadow: 0 0 30px rgba(0,0,0,0.5)
+.first
+	h2
+		+title
+		padding-top: 85px
+	&__wrap
+		margin-bottom: 15px
+		color: #22241b
+		display: flex
+		flex-wrap: wrap
+		.wrap__one
+			width: 470px
+			h3
+				+skills
+			.one__text
+				+normal300
+				width: 433px
+				font-size: 15px
+				p
+					margin-top: 40px
+					letter-spacing: 0.34px
+					line-height: 27px
+		.wrap__two
+			width: 470px
+			h3
+				+skills
+				margin-bottom: 40px
+			.merits
+				&__wrap
+					display: flex
+					justify-content: space-around
+					.merits__block
+						width: 103px
+						.block__romb
+							background: url(../img/romb.png) no-repeat
+							height: 103px
+							span
+								+normal100
+								font-size: 20px
+								color: #204d15
+								line-height: 100px
+								display: block
+								text-align: center
+						h4
+							+normal100
+							font-size: 12px
+							text-transform: uppercase
+							text-align: center
+							margin: 26px 0 68px 0
+			.network
+				color: #204d15
+				&__wrap
+					display: flex
+					justify-content: space-between
+					.network__one
+						ul
+							list-style: none
+							li
+								margin-bottom: 22px
+								a
+									+normal300
+									color: #204d15
+									font-size: 14px
+									padding-bottom: 5px
+									border-bottom: 1px solid #818181
+					.network__two
+						display: flex
+						.network__img
+							background-color: #eef1ed
+							width: 64px
+							height: 64px
+							border-radius: 50%
+							img
+								display: block
+								margin: 0 auto
+								margin-top: 18px
+						.network__text
+							+normal300
+							color: #22241b
+							font-size: 14px
+							margin: 30px 0 0 21px
+.second	
+	color: #22241b
+	margin-bottom: 83px
+	h2
+		+title
+		margin-top: 75px
+	&__wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		.second__block
+			display: flex
+			.second__img
+				background: url(../img/round.png) no-repeat
+				width: 61px
+				height: 61px
+				+normal100
+				font-size: 13px
+				text-align: center
+				line-height: 58px
+			.second__text
+				+bold
+				text-transform: uppercase
+				font-size: 15px
+				margin-top: 24px
+				margin-left: 29px
+.third
+	h2
+		+title
+	&__wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		.third__block
+			width: 300px
+			height: 299px
+			margin-bottom: 123px
+			.third__text
+				height: 100%
+				background: rgba(0,0,0, 0.5)
+				text-align: center
+				display: none
+				h4
+					+bold
+					color: #fff
+					text-transform: uppercase
+					padding: 129px 0 14px 0
+				a
+					+normal300
+					font-size: 13px
+					color: #fff
+					border-bottom: 1px solid #818181
+					padding-bottom: 3px
+
+
+		.third__one
+			background: url(../img/pic1.jpg) no-repeat
+		.third__two
+			background: url(../img/pic2.jpg) no-repeat
+		.third__three
+			background: url(../img/pic3.jpg) no-repeat
+footer
+	.footer__text
+		+normal300
+		font-size: 11px
+		color: #22241b
+		text-transform: uppercase
+		padding-bottom: 112px
+
+
